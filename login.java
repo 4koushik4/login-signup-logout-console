@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class login {
 
-    // HashMap to store user credentials
+    
     private static HashMap<String, String> users = new HashMap<>();
     private static String loggedInUser = null;
 
@@ -13,7 +13,7 @@ public class login {
         while (true) {
             System.out.println("\n==== Welcome ====");
 
-            // Ask user to log in
+            
             if (loggedInUser == null) {
                 System.out.print("Enter username: ");
                 String username = scanner.nextLine();
@@ -37,13 +37,13 @@ public class login {
                 }
             }
 
-            // Show content after login
+            
             if (loggedInUser != null) {
                 System.out.println("\n==== Logged In ====");
                 System.out.println("Welcome to the application, " + loggedInUser + "!");
                 System.out.println("It's great having you buddy... ");
 
-                // Log out option
+                
                 System.out.println("\nWould you like to log out? (yes/no)");
                 String choice = scanner.nextLine();
 
@@ -56,7 +56,7 @@ public class login {
         }
     }
 
-    // Sign-Up Method
+    
     private static void signUp(Scanner scanner) {
         System.out.println("\n==== Sign Up ====");
         System.out.print("Enter username: ");
@@ -73,7 +73,7 @@ public class login {
         System.out.println("Sign up successful! You can now log in.");
     }
 
-    // Log-Out Method
+    
     private static void logOut() {
         if (loggedInUser == null) {
             System.out.println("No user is currently logged in.");
